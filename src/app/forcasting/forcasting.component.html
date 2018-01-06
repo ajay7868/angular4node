@@ -1,0 +1,15 @@
+<p>
+ Forcasting 
+</p>
+
+<div class="row" *ngFor="let item of cityforcast">
+  
+  <div class="col-xs-12">
+    <div class="col-xs-3">
+      <p>Date: {{item.day |date:ddmmyy}}</p></div>
+    <div class="col-xs-3">  <p>Min: {{item.mintemp}}&deg;</p>
+      <p>Max: {{item.maxtemp}}&deg;</p>
+    </div>
+    
+  </div>
+</div>
