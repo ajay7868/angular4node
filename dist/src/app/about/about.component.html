@@ -1,0 +1,24 @@
+<!-- <div *ngFor="let name of names;index as i"> -->
+        <div *ngFor="let name of names;first as f">
+<h3>{{f}} {{name}}</h3>
+</div>
+
+
+     <div [ngSwitch]="colors">
+        <div *ngSwitchCase="'red'">red calls</div>
+        <div *ngSwitchCase="'blue'">blue calls</div>
+        <div *ngSwitchCase="'black'">black calls</div>
+        <div *ngSwitchDefault>back again  </div>
+    </div>
+
+    <div>
+       
+        <ng-container *ngIf="displayname; else elseTemplate">
+            
+        </ng-container>
+        <ng-template #elseTemplate>
+            
+        </ng-template>
+        
+    </div>
+
